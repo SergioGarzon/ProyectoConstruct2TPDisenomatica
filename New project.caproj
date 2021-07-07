@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3m9ev1e04lm4g</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="sliderbar" version="1">Slider bar</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="wallpaper" sid="997708540078695">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="579893349153921" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnStartGame" sid="480926716201160">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706683795508424" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Notebook\Desktop\DatosConstruct\btnStartGame.png">
+                        <collision-poly>
+                            <point x="0.036036" y="0.119403" />
+                            <point x="0.5" y="0.0597015" />
+                            <point x="0.968468" y="0.104478" />
+                            <point x="0.995495" y="0.492537" />
+                            <point x="0.972973" y="0.910448" />
+                            <point x="0.5" y="0.970149" />
+                            <point x="0.036036" y="0.880597" />
+                            <point x="0.0135135" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnOptionsGame" sid="366917270763408">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="882324614954281" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Notebook\Desktop\DatosConstruct\btnOptionsGame.png">
+                        <collision-poly>
+                            <point x="0.036036" y="0.119403" />
+                            <point x="0.5" y="0.0597015" />
+                            <point x="0.968468" y="0.104478" />
+                            <point x="0.995495" y="0.492537" />
+                            <point x="0.972973" y="0.910448" />
+                            <point x="0.5" y="0.955224" />
+                            <point x="0.0315315" y="0.895522" />
+                            <point x="0.0135135" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnQuitGame" sid="842570802887272">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="423187311557365" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Notebook\Desktop\DatosConstruct\btnQuitGame.png">
+                        <collision-poly>
+                            <point x="0.0315315" y="0.104478" />
+                            <point x="0.5" y="0.0597015" />
+                            <point x="0.968468" y="0.104478" />
+                            <point x="0.995495" y="0.492537" />
+                            <point x="0.972973" y="0.910448" />
+                            <point x="0.5" y="0.955224" />
+                            <point x="0.0315315" y="0.895522" />
+                            <point x="0.0135135" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="349493088574452">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="btnBackGame" sid="994734762555372">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="801473969426505" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Notebook\Desktop\DatosConstruct\btnBackButton.png">
+                        <collision-poly>
+                            <point x="0.0315315" y="0.104478" />
+                            <point x="0.5" y="0.0597015" />
+                            <point x="0.968468" y="0.104478" />
+                            <point x="0.995495" y="0.492537" />
+                            <point x="0.972973" y="0.910448" />
+                            <point x="0.5" y="0.955224" />
+                            <point x="0.0315315" y="0.895522" />
+                            <point x="0.0135135" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sldVolumeGame" sid="774219647329612">
+            <plugin id="sliderbar" />
+        </object-type>
+        <object-type name="Mouse" sid="945644054571397">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Cusor" sid="719474736870832">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="455581298700005" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\Users\Notebook\Desktop\DatosConstruct\cursor.png">
+                        <collision-poly>
+                            <point x="0.06" y="0.0491803" />
+                            <point x="0.5" y="0.344262" />
+                            <point x="0.54" y="0.377049" />
+                            <point x="0.7" y="0.491803" />
+                            <point x="0.64" y="0.704918" />
+                            <point x="0.5" y="0.704918" />
+                            <point x="0.06" y="0.95082" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txtVolumeGame" sid="990788940789309">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Browser" sid="650063409814797">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="txtActivateVolumeGame" sid="323459717744463">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="imgRacingCompetition" sid="768290338335389">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="658287156146112" speed="5">
+                    <frame duration="1" hotspotX="0.501355" hotspotY="0.5" original-source="C:\Users\Notebook\Desktop\DatosConstruct\racingCompetition.png">
+                        <collision-poly>
+                            <point x="0.0379404" y="0.269231" />
+                            <point x="0.498645" y="0.173077" />
+                            <point x="0.97019" y="0.211538" />
+                            <point x="0.95664" y="0.692308" />
+                            <point x="0.498645" y="0.865385" />
+                            <point x="0.0243902" y="0.826923" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txtOptionsGame" sid="198590609657654">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="audioStartGame" sid="904814302312130">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="btnCredits" sid="654214823019029">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="350349959434852" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Notebook\Desktop\DatosConstruct\btnCredits.png">
+                        <collision-poly>
+                            <point x="0.036036" y="0.119403" />
+                            <point x="0.5" y="0.0597015" />
+                            <point x="0.968468" y="0.104478" />
+                            <point x="0.995495" y="0.492537" />
+                            <point x="0.972973" y="0.910448" />
+                            <point x="0.5" y="0.955224" />
+                            <point x="0.0315315" y="0.895522" />
+                            <point x="0.0135135" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="381471435826235">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635569326539527" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Notebook\Desktop\DatosConstruct\btnBackButton.png">
+                        <collision-poly>
+                            <point x="0.0315315" y="0.104478" />
+                            <point x="0.5" y="0.0597015" />
+                            <point x="0.968468" y="0.104478" />
+                            <point x="0.995495" y="0.492537" />
+                            <point x="0.972973" y="0.910448" />
+                            <point x="0.5" y="0.955224" />
+                            <point x="0.0315315" y="0.895522" />
+                            <point x="0.0135135" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txtCreditsGame" sid="723552689132248">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="tileMapLevel1" sid="250034366370940">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Notebook\Desktop\DatosConstruct\spritesheet_tiles.png" />
+            <tiles />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>StartMenu.xml</layout>
+        <layout>Level1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>EventSheetStartMenu.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="2">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="7" />
+        <global-instance type="Browser" uid="10" />
+        <global-instance type="audioStartGame" uid="14">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="UISoundStartGame.ogg" />
+        <file name="audioPrincipal.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

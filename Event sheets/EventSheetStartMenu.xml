@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventSheetStartMenu</name>
     <events>
-        <variable constant="0" name="volumeGame" sid="434808734391750" static="0" type="number">0</variable>
         <event-group description="" sid="152216427844915" title="UI">
             <sub-events>
                 <event-block sid="927218763817195">
@@ -187,14 +186,7 @@
                             <param id="2" name="Object clicked">btnStartGame</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="793102951073827" type="audioStartGame">
-                            <param id="0" name="Audio file">UISoundStartGame</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">volumeGame</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="554676694732174">
                     <conditions>

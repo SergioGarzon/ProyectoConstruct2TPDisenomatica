@@ -4,222 +4,234 @@
     <name>EventSheetStartMenu</name>
     <events>
         <variable constant="0" name="volumeGame" sid="434808734391750" static="0" type="number">0</variable>
-        <event-block sid="913949449742891">
-            <conditions>
-                <condition id="3" name="On touched object" sid="933929977733842" type="Touch">
-                    <param id="0" name="Object">btnOptionsGame</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="306090116665983" type="btnStartGame">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="787381535283108" type="btnOptionsGame">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="166783218629674" type="btnQuitGame">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="630109057003205" type="btnBackGame">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="1" name="Set visible" sid="896859603756854" type="sldVolumeGame">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="331004342938391" type="txtVolumeGame">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="208158219745104" type="imgRacingCompetition">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="436909142078043" type="txtActivateVolumeGame">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="811418178519219" type="txtOptionsGame">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="33" name="Stop all" sid="651238826254055" type="audioStartGame" />
-                <action id="-15" name="Set visible" sid="998167349574895" type="btnCredits">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="584049733177103">
-            <conditions>
-                <condition id="3" name="On touched object" sid="434358062173398" type="Touch">
-                    <param id="0" name="Object">btnBackGame</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="150596920882497" type="btnStartGame">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="949392719813617" type="btnOptionsGame">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="960990320573484" type="btnQuitGame">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="270977144932284" type="btnBackGame">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="1" name="Set visible" sid="898642173185682" type="sldVolumeGame">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="457826846940822" type="txtVolumeGame">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="821469775985167" type="imgRacingCompetition">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="926435792046966" type="txtActivateVolumeGame">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="720472144167263" type="txtOptionsGame">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="0" name="Play" sid="523870880097781" type="audioStartGame">
-                    <param id="0" name="Audio file">audioPrincipal</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-                <action id="-15" name="Set visible" sid="467157761401358" type="btnCredits">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="947204896365013" type="txtCreditsGame">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="352298621259580">
-            <conditions>
-                <condition id="3" name="On touched object" sid="309165260860441" type="Touch">
-                    <param id="0" name="Object">btnQuitGame</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="1" name="Close" sid="366738255524629" type="Browser" />
-            </actions>
-        </event-block>
-        <event-block sid="849757789575090">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="350177996929366" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">btnStartGame</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="793102951073827" type="audioStartGame">
-                    <param id="0" name="Audio file">UISoundStartGame</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">volumeGame</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="387298312905690">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="855239805432616" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="182824673387929" type="audioStartGame">
-                    <param id="0" name="Audio file">audioPrincipal</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;AudioPrincipal&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="554676694732174">
-            <conditions>
-                <condition id="2" name="On changed" sid="245129545893601" type="sldVolumeGame" />
-            </conditions>
-            <actions>
-                <action id="10" name="Set master volume" sid="496688272393608" type="audioStartGame">
-                    <param id="0" name="dB">sldVolumeGame.Value</param>
-                </action>
-            </actions>
+        <event-group description="" sid="152216427844915" title="UI">
             <sub-events>
-                <event-block sid="908230440230561">
+                <event-block sid="927218763817195">
                     <conditions>
-                        <condition id="1" name="Compare value" sid="755930183477933" type="sldVolumeGame">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Value">-50</param>
+                        <condition id="3" name="On touched object" sid="151570725831106" type="Touch">
+                            <param id="0" name="Object">btnCredits</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="8" name="Set silent" sid="175299536408555" type="audioStartGame">
-                            <param id="0" name="Mode">0</param>
+                        <action id="-15" name="Set visible" sid="800427736386754" type="btnBackGame">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="385507305830159" type="txtCreditsGame">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="656169501859308" type="btnCredits">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="370997016963188" type="btnOptionsGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="632256614013371" type="btnStartGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="264288943117740" type="imgRacingCompetition">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="774334124181141" type="btnQuitGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="616769678213281" type="audioStartGame" />
+                    </actions>
+                </event-block>
+                <event-block sid="867188343601755">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="744655601567975" type="Touch">
+                            <param id="0" name="Object">btnStartGame</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="465502936773972" type="System">
+                            <param id="0" name="Layout">Level1</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="815812871664655" type="audioStartGame" />
+                    </actions>
+                </event-block>
+                <event-block sid="352298621259580">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="503967646183914" type="Touch">
+                            <param id="0" name="Object">btnQuitGame</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Close" sid="366738255524629" type="Browser" />
+                    </actions>
+                </event-block>
+                <event-block sid="584049733177103">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="691531792907258" type="Touch">
+                            <param id="0" name="Object">btnBackGame</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="150596920882497" type="btnStartGame">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="949392719813617" type="btnOptionsGame">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="960990320573484" type="btnQuitGame">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="270977144932284" type="btnBackGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="898642173185682" type="sldVolumeGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="457826846940822" type="txtVolumeGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="821469775985167" type="imgRacingCompetition">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="926435792046966" type="txtActivateVolumeGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="720472144167263" type="txtOptionsGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="523870880097781" type="audioStartGame">
+                            <param id="0" name="Audio file">audioPrincipal</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="467157761401358" type="btnCredits">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="947204896365013" type="txtCreditsGame">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="209013775146756">
+                <event-block sid="913949449742891">
                     <conditions>
-                        <condition id="-22" name="Else" sid="624164844302885" type="System" />
+                        <condition id="3" name="On touched object" sid="178938641430949" type="Touch">
+                            <param id="0" name="Object">btnOptionsGame</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="8" name="Set silent" sid="848931445505811" type="audioStartGame">
-                            <param id="0" name="Mode">1</param>
+                        <action id="-15" name="Set visible" sid="306090116665983" type="btnStartGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="787381535283108" type="btnOptionsGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="166783218629674" type="btnQuitGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="630109057003205" type="btnBackGame">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="1" name="Set visible" sid="896859603756854" type="sldVolumeGame">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="331004342938391" type="txtVolumeGame">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="208158219745104" type="imgRacingCompetition">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="436909142078043" type="txtActivateVolumeGame">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="811418178519219" type="txtOptionsGame">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="651238826254055" type="audioStartGame" />
+                        <action id="-15" name="Set visible" sid="998167349574895" type="btnCredits">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="927218763817195">
-            <conditions>
-                <condition id="3" name="On touched object" sid="831007970833571" type="Touch">
-                    <param id="0" name="Object">btnCredits</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="800427736386754" type="btnBackGame">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="385507305830159" type="txtCreditsGame">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="656169501859308" type="btnCredits">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="370997016963188" type="btnOptionsGame">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="632256614013371" type="btnStartGame">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="264288943117740" type="imgRacingCompetition">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="-15" name="Set visible" sid="774334124181141" type="btnQuitGame">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action id="33" name="Stop all" sid="616769678213281" type="audioStartGame" />
-            </actions>
-        </event-block>
-        <event-block sid="171398414568983">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="545619761298171" type="System" />
-            </conditions>
-            <actions>
-                <action id="1" name="Set cursor from sprite" sid="721732501434121" type="Mouse">
-                    <param id="0" name="Sprite">Cusor</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="867188343601755">
-            <conditions>
-                <condition id="3" name="On touched object" sid="405915116082822" type="Touch">
-                    <param id="0" name="Object">btnStartGame</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="465502936773972" type="System">
-                    <param id="0" name="Layout">Level1</param>
-                </action>
-                <action id="33" name="Stop all" sid="815812871664655" type="audioStartGame" />
-            </actions>
-        </event-block>
+        </event-group>
+        <event-group description="" sid="392882134236565" title="System">
+            <sub-events>
+                <event-block sid="387298312905690">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="388123895999721" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="182824673387929" type="audioStartGame">
+                            <param id="0" name="Audio file">audioPrincipal</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;AudioPrincipal&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="171398414568983">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="646539764007463" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set cursor from sprite" sid="721732501434121" type="Mouse">
+                            <param id="0" name="Sprite">Cusor</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="106070428474601" title="Audio">
+            <sub-events>
+                <event-block sid="849757789575090">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="659773772838435" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">btnStartGame</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="793102951073827" type="audioStartGame">
+                            <param id="0" name="Audio file">UISoundStartGame</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">volumeGame</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="554676694732174">
+                    <conditions>
+                        <condition id="2" name="On changed" sid="539603253887286" type="sldVolumeGame" />
+                    </conditions>
+                    <actions>
+                        <action id="10" name="Set master volume" sid="496688272393608" type="audioStartGame">
+                            <param id="0" name="dB">sldVolumeGame.Value</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="908230440230561">
+                            <conditions>
+                                <condition id="1" name="Compare value" sid="755930183477933" type="sldVolumeGame">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Value">-50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="8" name="Set silent" sid="175299536408555" type="audioStartGame">
+                                    <param id="0" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="209013775146756">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="624164844302885" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="8" name="Set silent" sid="848931445505811" type="audioStartGame">
+                                    <param id="0" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

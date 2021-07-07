@@ -19,7 +19,11 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="sliderbar" version="1">Slider bar</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -236,15 +240,54 @@
             <texture original-source="C:\Users\Notebook\Desktop\DatosConstruct\spritesheet_tiles.png" />
             <tiles />
         </object-type>
+        <object-type name="TileMap2" sid="761973794773699">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Notebook\Desktop\DatosConstruct\spritesheet_objects.png" />
+            <tiles />
+        </object-type>
+        <object-type name="carRed" sid="271576901222977">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="933297523416718">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="854044688781051">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="351650326302826">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550728558392993" speed="5">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.503817" original-source="C:\Users\Notebook\Desktop\DatosConstruct\car_red_1.png">
+                        <collision-poly>
+                            <point x="0.084507" y="0.0458015" />
+                            <point x="0.492958" y="0" />
+                            <point x="0.929577" y="0.0381679" />
+                            <point x="0.957747" y="0.496183" />
+                            <point x="0.929577" y="0.961832" />
+                            <point x="0.492958" y="0.992366" />
+                            <point x="0.0704225" y="0.961832" />
+                            <point x="0.0422535" y="0.496183" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>StartMenu.xml</layout>
         <layout>Level1.xml</layout>
+        <layout>Level2.xml</layout>
+        <layout>Level3.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>EventSheetStartMenu.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="2">

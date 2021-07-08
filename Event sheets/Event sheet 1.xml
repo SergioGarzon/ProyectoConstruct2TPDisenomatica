@@ -35,6 +35,18 @@
                 <action behavior="Turret" id="1" name="Add object to target" sid="658492930101550" type="cannonNewEnemy">
                     <param id="0" name="Target">Player</param>
                 </action>
+                <action id="-15" name="Set visible" sid="729158285171219" type="btnContinuar">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="243908897824479" type="btnContinueLevel3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="783674790485390" type="btnQuitGame">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="626352401625533" type="txtNivelCompleto">
+                    <param id="0" name="Visibility">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="328732633014394">

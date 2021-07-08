@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="playerEnergy" sid="672643124082531" static="0" type="number">5</variable>
         <event-block sid="782041017481607">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="579924624555982" type="System" />
@@ -26,6 +27,13 @@
                     <param id="0" name="X">Player.X</param>
                     <param id="1" name="Y">Player.Y</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="830850205726123" type="cannonNewEnemy">
+                    <param id="0" name="Pin to">enemy1</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+                <action behavior="Turret" id="1" name="Add object to target" sid="658492930101550" type="cannonNewEnemy">
+                    <param id="0" name="Target">Player</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="328732633014394">
@@ -37,6 +45,11 @@
                     <param id="0" name="Degrees">5</param>
                     <param id="1" name="X">Mouse.X</param>
                     <param id="2" name="Y">Mouse.Y</param>
+                </action>
+                <action disabled="1" id="-21" name="Rotate toward position" sid="227011783883488" type="cannonNewEnemy">
+                    <param id="0" name="Degrees">5</param>
+                    <param id="1" name="X">Player.X</param>
+                    <param id="2" name="Y">Player.Y</param>
                 </action>
             </actions>
         </event-block>
@@ -102,6 +115,97 @@
                     <param id="0" name="X">Player.X</param>
                     <param id="1" name="Y">Player.Y</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="841513502799138">
+            <conditions>
+                <condition behavior="Turret" id="1" name="On shoot" sid="210929427133324" type="cannonNewEnemy" />
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="365216633130630" type="cannonNewEnemy">
+                    <param id="0" name="Object">bulletEnemy</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="613090712881767">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="690630412210692" type="bulletEnemy">
+                    <param id="0" name="Object">Pared</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="211510463306819" type="bulletEnemy" />
+                <action id="0" name="Spawn another object" sid="941195727087908" type="bulletEnemy">
+                    <param id="0" name="Object">Explosion</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="692280290664528" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="817580040176225" type="Explosion" />
+            </actions>
+        </event-block>
+        <event-block sid="676867980598486">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="889073334185547" type="disparoShoot">
+                    <param id="0" name="Object">enemy1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="511568748018987" type="enemy1" />
+                <action id="-9" name="Destroy" sid="649682815770381" type="cannonNewEnemy" />
+                <action id="0" name="Spawn another object" sid="503305925953807" type="disparoShoot">
+                    <param id="0" name="Object">Explosion</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="934543208070285" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="753673341151398" type="Explosion" />
+                <action id="-9" name="Set value" sid="462451338070502" type="System">
+                    <param id="0" name="Variable">playerEnergy</param>
+                    <param id="1" name="Value">playerEnergy - 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="680003705903253">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="518678191922344" type="bulletEnemy">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="298378990988020" type="bulletEnemy" />
+                <action id="0" name="Spawn another object" sid="471111012723315" type="bulletEnemy">
+                    <param id="0" name="Object">Fire</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="919210755216373" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="944271296734555" type="Fire" />
+                <action id="-9" name="Set value" sid="806857703406631" type="System">
+                    <param id="0" name="Variable">playerEnergy</param>
+                    <param id="1" name="Value">playerEnergy - 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="396824098152849">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="984525337209384" type="System">
+                    <param id="0" name="Variable">playerEnergy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="330997696124638" type="Player" />
+                <action id="-9" name="Destroy" sid="799183322560018" type="cannon" />
             </actions>
         </event-block>
     </events>

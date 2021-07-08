@@ -25,6 +25,7 @@
         <behavior author="Scirra" id="Car" version="1">Car</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -469,6 +470,93 @@
                             <point x="0.495575" y="1" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cannonNewEnemy" sid="540381721059387">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="379521651552176">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Turret" sid="462060727655366">
+                    <behavior id="Turret" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="169161208669687" speed="5">
+                    <frame duration="1" hotspotX="0.0689655" hotspotY="0.45" original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\cannonMobileNew.png">
+                        <image-point name="OriginShootEnemy" x="1.37931" y="0.55" />
+                        <collision-poly>
+                            <point x="0.0689655" y="0.1" />
+                            <point x="0.482759" y="0.1" />
+                            <point x="0.862069" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.862069" y="0.8" />
+                            <point x="0.482759" y="0.9" />
+                            <point x="0.0689655" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bulletEnemy" sid="968593795396639">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="114593345569417">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="247172686274660">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="696464234409808" speed="5">
+                    <frame duration="1" hotspotX="0.545455" hotspotY="0.5" original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\flag (1).png">
+                        <collision-poly>
+                            <point x="0.181818" y="0.833333" />
+                            <point x="0" y="0.5" />
+                            <point x="0.181818" y="0.166667" />
+                            <point x="0.454545" y="0.083333" />
+                            <point x="0.818182" y="0.166667" />
+                            <point x="0.909091" y="0.5" />
+                            <point x="0.818182" y="0.833333" />
+                            <point x="0.454545" y="0.916667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fire" sid="132880265476676">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="988076864510884" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512821" original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\fire1.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.102564" />
+                            <point x="0.5" y="0.025641" />
+                            <point x="0.5" y="0.230769" />
+                            <point x="0.944444" y="0.487179" />
+                            <point x="0.777778" y="0.897436" />
+                            <point x="0.5" y="0.974359" />
+                            <point x="0.166667" y="0.923077" />
+                            <point x="0.111111" y="0.487179" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.545455" hotspotY="0.518519" original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\fire2.png">
+                        <collision-poly>
+                            <point x="0.545455" y="0.222222" />
+                            <point x="0.454545" y="0.037037" />
+                            <point x="0.727273" y="0.111111" />
+                            <point x="0.818182" y="0.481481" />
+                            <point x="0.818182" y="0.925926" />
+                            <point x="0.454545" y="1" />
+                            <point x="0.272727" y="0.888889" />
+                            <point x="0.181818" y="0.481481" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.545455" hotspotY="0.518519" />
                 </animation>
             </animation-folder>
         </object-type>

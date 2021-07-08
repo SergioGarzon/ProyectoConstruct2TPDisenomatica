@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="378245749879557">
+        <layer name="StartMenu" sid="378245749879557">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -164,7 +164,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 1" sid="943664546017243">
+        <layer name="OptionMenu" sid="943664546017243">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -332,7 +332,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 2" sid="564621879472097">
+        <layer name="Credits" sid="564621879472097">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>

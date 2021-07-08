@@ -228,6 +228,15 @@
                 <action id="-15" name="Set visible" sid="794248164230331" type="btnContinuar">
                     <param id="0" name="Visibility">1</param>
                 </action>
+                <action id="-15" name="Set visible" sid="209971406972483" type="btnContinueLevel3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="183847638858487" type="btnBackGame">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="240712109807279" type="btnQuitGame">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="494944045152551">
@@ -243,6 +252,92 @@
                 <action id="-9" name="Set value" sid="454912011130553" type="System">
                     <param id="0" name="Variable">CountEnemy</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="101941411092598" type="System">
+                    <param id="0" name="Variable">playerEnergy</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="262958681995639" type="txtNivelCompleto">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="154621805267213" type="btnContinuar">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="278791877239688">
+            <conditions>
+                <condition id="3" name="On touched object" sid="613172262442881" type="Touch">
+                    <param id="0" name="Object">btnContinueLevel3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="215545534036623" type="System">
+                    <param id="0" name="Layout">Level3</param>
+                </action>
+                <action id="-9" name="Set value" sid="830639821043520" type="System">
+                    <param id="0" name="Variable">CountEnemy</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="132353785548541" type="System">
+                    <param id="0" name="Variable">playerEnergy</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="962908418321903" type="txtNivelCompleto">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="375984141753332" type="btnContinueLevel3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="828700803719694">
+            <conditions>
+                <condition id="3" name="On touched object" sid="367835093021634" type="Touch">
+                    <param id="0" name="Object">btnBackGame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="115118870291845" type="System">
+                    <param id="0" name="Layout">StartMenu</param>
+                </action>
+                <action id="33" name="Stop all" sid="340464921740348" type="audioStartGame" />
+                <action id="-15" name="Set visible" sid="326131096398567" type="txtNivelCompleto">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="248655695614140" type="btnContinuar">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="909752365875572" type="btnContinueLevel3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="879094337003915" type="btnQuitGame">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="160541860748955">
+            <conditions>
+                <condition id="3" name="On touched object" sid="664673644765816" type="Touch">
+                    <param id="0" name="Object">btnQuitGame</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="218838181351227" type="System">
+                    <param id="0" name="Layout">StartMenu</param>
+                </action>
+                <action id="33" name="Stop all" sid="589284304870840" type="audioStartGame" />
+                <action id="-15" name="Set visible" sid="943808001579007" type="btnContinuar">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="629152792446396" type="btnContinueLevel3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="273248571502206" type="btnQuitGame">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="160547211998624" type="txtNivelCompleto">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>

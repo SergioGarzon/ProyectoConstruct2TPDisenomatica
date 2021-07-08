@@ -34,6 +34,9 @@
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="33" name="Stop all" sid="616769678213281" type="audioStartGame" />
+                        <action id="-15" name="Set visible" sid="326701689329747" type="txtNameCredits">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="867188343601755">
@@ -87,9 +90,6 @@
                         <action id="-15" name="Set visible" sid="821469775985167" type="imgPirateGame">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="926435792046966" type="txtActivateVolumeGame">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
                         <action id="-15" name="Set visible" sid="720472144167263" type="txtOptionsGame">
                             <param id="0" name="Visibility">0</param>
                         </action>
@@ -103,6 +103,9 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-15" name="Set visible" sid="947204896365013" type="txtCreditsGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="189166341575056" type="txtNameCredits">
                             <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
@@ -134,9 +137,6 @@
                         </action>
                         <action id="-15" name="Set visible" sid="208158219745104" type="imgPirateGame">
                             <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="436909142078043" type="txtActivateVolumeGame">
-                            <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-15" name="Set visible" sid="811418178519219" type="txtOptionsGame">
                             <param id="0" name="Visibility">1</param>

@@ -560,6 +560,31 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="txtIndicadorNivel" sid="311455872657707">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txtNivelCompleto" sid="658627875823970">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="btnContinuar" sid="841477134618167">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="585334155780969" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Notebook\Desktop\DatosConstruct\btnContinuar.png">
+                        <collision-poly>
+                            <point x="0.0315315" y="0.104478" />
+                            <point x="0.5" y="0.0597015" />
+                            <point x="0.968468" y="0.104478" />
+                            <point x="0.995495" y="0.492537" />
+                            <point x="0.972973" y="0.910448" />
+                            <point x="0.5" y="0.955224" />
+                            <point x="0.0315315" y="0.895522" />
+                            <point x="0.0135135" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

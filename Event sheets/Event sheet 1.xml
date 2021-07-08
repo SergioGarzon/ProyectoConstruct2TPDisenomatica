@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="CountEnemy" sid="503527106170587" static="0" type="number">1</variable>
         <variable constant="0" name="playerEnergy" sid="672643124082531" static="0" type="number">5</variable>
         <event-block sid="782041017481607">
             <conditions>
@@ -170,6 +171,10 @@
                     <param id="0" name="Variable">playerEnergy</param>
                     <param id="1" name="Value">playerEnergy - 1</param>
                 </action>
+                <action id="-9" name="Set value" sid="862994225067447" type="System">
+                    <param id="0" name="Variable">CountEnemy</param>
+                    <param id="1" name="Value">CountEnemy - 1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="680003705903253">
@@ -206,6 +211,39 @@
             <actions>
                 <action id="-9" name="Destroy" sid="330997696124638" type="Player" />
                 <action id="-9" name="Destroy" sid="799183322560018" type="cannon" />
+            </actions>
+        </event-block>
+        <event-block sid="562359059909123">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="521897716077688" type="System">
+                    <param id="0" name="Variable">CountEnemy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="494023192089126" type="txtNivelCompleto">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="794248164230331" type="btnContinuar">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="494944045152551">
+            <conditions>
+                <condition id="3" name="On touched object" sid="808631491015948" type="Touch">
+                    <param id="0" name="Object">btnContinuar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="486022102266738" type="System">
+                    <param id="0" name="Layout">Level2</param>
+                </action>
+                <action id="-9" name="Set value" sid="454912011130553" type="System">
+                    <param id="0" name="Variable">CountEnemy</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
     </events>

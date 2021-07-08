@@ -10,11 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">StartMenu</layout>
-        <layout order="3">Level1</layout>
+        <layout order="1">StartMenu</layout>
+        <layout active="1" order="3">Level1</layout>
         <layout order="4">Level2</layout>
         <layout order="5">Level3</layout>
         <event-sheet order="2">EventSheetStartMenu</event-sheet>
+        <event-sheet order="6">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -37,9 +38,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btnQuitGame/" />
         <folder expanded="1" path="animation-folder/btnBackGame/" />
         <folder expanded="1" path="animation-folder/Cusor/" />
-        <folder expanded="1" path="animation-folder/imgRacingCompetition/" />
+        <folder expanded="1" path="animation-folder/imgPirateGame/" />
         <folder expanded="1" path="animation-folder/btnCredits/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/carRed/" />
+        <folder expanded="1" path="animation-folder/Ship/" />
+        <folder expanded="1" path="animation-folder/PirateGame/" />
+        <folder expanded="1" path="animation-folder/buttonQuitGameOptions/" />
+        <folder expanded="1" path="animation-folder/cannon/" />
     </folders-expanded>
 </c2uistate>

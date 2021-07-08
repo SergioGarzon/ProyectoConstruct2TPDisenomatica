@@ -27,7 +27,7 @@
                         <action id="-15" name="Set visible" sid="632256614013371" type="btnStartGame">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="264288943117740" type="imgRacingCompetition">
+                        <action id="-15" name="Set visible" sid="264288943117740" type="imgPirateGame">
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="-15" name="Set visible" sid="774334124181141" type="btnQuitGame">
@@ -84,7 +84,7 @@
                         <action id="-15" name="Set visible" sid="457826846940822" type="txtVolumeGame">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="821469775985167" type="imgRacingCompetition">
+                        <action id="-15" name="Set visible" sid="821469775985167" type="imgPirateGame">
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-15" name="Set visible" sid="926435792046966" type="txtActivateVolumeGame">
@@ -132,7 +132,7 @@
                         <action id="-15" name="Set visible" sid="331004342938391" type="txtVolumeGame">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="208158219745104" type="imgRacingCompetition">
+                        <action id="-15" name="Set visible" sid="208158219745104" type="imgPirateGame">
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="-15" name="Set visible" sid="436909142078043" type="txtActivateVolumeGame">

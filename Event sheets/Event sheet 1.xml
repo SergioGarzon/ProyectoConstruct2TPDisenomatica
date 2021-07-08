@@ -2,5 +2,23 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="782041017481607">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="579924624555982" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="713549032439382" type="audioStartGame">
+                    <param id="0" name="Audio file">audioGameplay</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">sldVolumeGame.Value</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="451855244282336" type="cannon">
+                    <param id="0" name="Pin to">Ship</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

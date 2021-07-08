@@ -292,7 +292,39 @@
         <object-type name="TileMapBackground" sid="346789859492696">
             <plugin id="Tilemap" />
             <texture original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\tiles_sheet.png" />
-            <tiles />
+            <tiles>
+                <tile id="272">
+                    <collision-poly>
+                        <point x="0.03125" y="1" />
+                        <point x="0" y="1" />
+                        <point x="0" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="273">
+                    <collision-poly>
+                        <point x="0" y="1" />
+                        <point x="0" y="1" />
+                        <point x="0.0078125" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="304">
+                    <collision-poly>
+                        <point x="0.03125" y="1" />
+                        <point x="0" y="1" />
+                        <point x="0" y="0.984375" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="305">
+                    <collision-poly>
+                        <point x="0" y="0.945313" />
+                        <point x="0.03125" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+            </tiles>
         </object-type>
         <object-type name="cannon" sid="248236863833849">
             <plugin id="Sprite" />
@@ -604,13 +636,109 @@
         <object-type name="txtNameCredits" sid="755222417024772">
             <plugin id="Text" />
         </object-type>
+        <object-type name="NewTileMap" sid="686303579338776">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\TileMapBackground.png" />
+            <tiles />
+        </object-type>
+        <object-type name="TileMNew" sid="539102963612969">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="406125119534842">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\TileMapBackground.png" />
+            <tiles>
+                <tile id="161">
+                    <collision-poly>
+                        <point x="0" y="0" />
+                        <point x="1" y="0" />
+                        <point x="0.992188" y="0.929688" />
+                        <point x="0.015625" y="0.835938" />
+                    </collision-poly>
+                </tile>
+                <tile id="272">
+                    <collision-poly>
+                        <point x="0" y="1" />
+                        <point x="0.101563" y="0.984375" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="273">
+                    <collision-poly>
+                        <point x="0.046875" y="1" />
+                        <point x="0.015625" y="1" />
+                        <point x="0" y="0.960938" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="304">
+                    <collision-poly>
+                        <point x="0" y="1" />
+                        <point x="0" y="1" />
+                        <point x="0" y="0.992188" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+                <tile id="305">
+                    <collision-poly>
+                        <point x="0.125" y="1" />
+                        <point x="0.03125" y="1" />
+                        <point x="0.0390625" y="0.992188" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
+        <object-type name="TileMapNewVer2" sid="126226815350704">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\TileMapBackground.png" />
+            <tiles />
+        </object-type>
+        <object-type name="TileMapLevel2" sid="330535341128962">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="397631946667276">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\TileMapBackground.png" />
+            <tiles />
+        </object-type>
+        <object-type name="NuevoTile2" sid="512223074153834">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="638573883654679">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\TileMapBackground.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Tilemap" sid="459339398717311">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="425203618795377">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\TileMapBackground.png" />
+            <tiles />
+        </object-type>
+        <object-type name="NewTileLevel3" sid="490900588867121">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="183629633689561">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\TileMapBackground.png" />
+            <tiles />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>StartMenu.xml</layout>
-        <layout>Level1.xml</layout>
-        <layout>Level2.xml</layout>
-        <layout>Level3.xml</layout>
         <layout>TileMapLevel1.xml</layout>
         <layout>TileMapLevel2.xml</layout>
         <layout>TileMapLevel3.xml</layout>

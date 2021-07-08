@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="1">StartMenu</layout>
-        <layout active="1" order="3">Level1</layout>
-        <layout order="4">Level2</layout>
+        <layout order="3">Level1</layout>
+        <layout active="1" order="4">Level2</layout>
         <layout order="5">Level3</layout>
         <event-sheet order="2">EventSheetStartMenu</event-sheet>
         <event-sheet order="6">Event sheet 1</event-sheet>
@@ -41,9 +41,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/imgPirateGame/" />
         <folder expanded="1" path="animation-folder/btnCredits/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Ship/" />
+        <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/PirateGame/" />
-        <folder expanded="1" path="animation-folder/buttonQuitGameOptions/" />
         <folder expanded="1" path="animation-folder/cannon/" />
+        <folder expanded="1" path="animation-folder/buttonQuitGame/" />
+        <folder expanded="1" path="animation-folder/disparoShoot/" />
+        <folder expanded="1" path="animation-folder/Pared/" />
+        <folder expanded="1" path="animation-folder/Explosion/" />
+        <folder expanded="1" path="animation-folder/enemy1/" />
+        <folder expanded="1" path="animation-folder/enemy2/" />
     </folders-expanded>
 </c2uistate>

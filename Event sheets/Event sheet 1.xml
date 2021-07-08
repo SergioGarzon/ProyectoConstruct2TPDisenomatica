@@ -15,8 +15,92 @@
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action behavior="Pin" id="0" name="Pin to object" sid="451855244282336" type="cannon">
-                    <param id="0" name="Pin to">Ship</param>
+                    <param id="0" name="Pin to">Player</param>
                     <param id="1" name="Mode">1</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="348615024455439" type="enemy1">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="235875142396528" type="enemy2">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="328732633014394">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="819558957605466" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Rotate toward position" sid="907193395433693" type="cannon">
+                    <param id="0" name="Degrees">5</param>
+                    <param id="1" name="X">Mouse.X</param>
+                    <param id="2" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="385637541842220">
+            <conditions>
+                <condition id="0" name="On click" sid="296492883947172" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="887722889886245" type="cannon">
+                    <param id="0" name="Object">disparoShoot</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="732821081657860">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="419737833365412" type="disparoShoot">
+                    <param id="0" name="Object">Pared</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="184288810753696" type="disparoShoot" />
+                <action id="0" name="Spawn another object" sid="980963019875390" type="disparoShoot">
+                    <param id="0" name="Object">Explosion</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="853711949656789" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="159050700394522" type="Explosion" />
+            </actions>
+        </event-block>
+        <event-block sid="674209087071590">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="808307534302888" type="enemy1" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="268337203382749" type="enemy1" />
+            </actions>
+        </event-block>
+        <event-block sid="242798687320311">
+            <conditions>
+                <condition behavior="Pathfinding" id="1" name="On failed to find path" sid="292468832668346" type="enemy1" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="455420741534203" type="enemy1">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="266025125195653">
+            <conditions>
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="649165478106627" type="enemy1" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="592011360526083" type="enemy1">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
                 </action>
             </actions>
         </event-block>

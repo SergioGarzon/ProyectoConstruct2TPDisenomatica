@@ -460,6 +460,9 @@
                 <behavior-type name="Pathfinding" sid="265839937802131">
                     <behavior id="Pathfinding" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="298640091163612">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="483139967834585" speed="5">
@@ -483,6 +486,9 @@
             <behaviors>
                 <behavior-type name="Pathfinding" sid="313623599613320">
                     <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="116547994322465">
+                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -734,6 +740,86 @@
             </behaviors>
             <texture original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\TileMapBackground.png" />
             <tiles />
+        </object-type>
+        <object-type name="txtGameOver" sid="660417647254042">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="btnGameOver2" sid="972601368948890">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="606207246069775" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507463" original-source="C:\Users\Notebook\Desktop\DatosConstruct\btnQuitGame.png">
+                        <collision-poly>
+                            <point x="0.0315315" y="0.104478" />
+                            <point x="0.5" y="0.0597015" />
+                            <point x="0.968468" y="0.104478" />
+                            <point x="0.995495" y="0.492537" />
+                            <point x="0.972973" y="0.910448" />
+                            <point x="0.5" y="0.955224" />
+                            <point x="0.0315315" y="0.895522" />
+                            <point x="0.0135135" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="canonEnemy2" sid="923910509002841">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="108045900986902">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Turret" sid="779761329930627">
+                    <behavior id="Turret" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="445402285933957" speed="5">
+                    <frame duration="1" hotspotX="0.275862" hotspotY="0.45" original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\cannonMobileNew.png">
+                        <image-point name="OriginShootEnemy2" x="1.65517" y="0.55" />
+                        <collision-poly>
+                            <point x="0.0689655" y="0.1" />
+                            <point x="0.482759" y="0.1" />
+                            <point x="0.862069" y="0.2" />
+                            <point x="1" y="0.5" />
+                            <point x="0.862069" y="0.8" />
+                            <point x="0.482759" y="0.9" />
+                            <point x="0.0689655" y="0.9" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="disparoEnemigo2" sid="583170999694505">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="856581667007760">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="925924222516555" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Notebook\Desktop\DatosConstruct\Textures\flag (4).png">
+                        <collision-poly>
+                            <point x="0.0454545" y="0.833333" />
+                            <point x="0" y="0.5" />
+                            <point x="0.0454545" y="0.166667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.954545" y="0.166667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.954545" y="0.833333" />
+                            <point x="0.5" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txtEnergyPlayer" sid="578097444141744">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txtEnergyValue" sid="480564921887686">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
